@@ -1,6 +1,6 @@
 // import "dotenv/config";
 // import { PrismaPg } from "@prisma/adapter-pg";
-// import { PrismaClient } from "../generated/prisma/client.js";
+// import { PrismaClient } from "../generated/prisma/client";
 
 // const connectionString = `${process.env.DATABASE_URL}`;
 
@@ -8,15 +8,13 @@
 // const prisma = new PrismaClient({ adapter });
 
 // export default  prisma ;
-// ------------------------------------------------------ts-----------------------------
-// now it is in js---------------changing the name of file from prisma.ts  to prisma.js
-// import { PrismaClient } from "@prisma/client";
 
-// const prisma = new PrismaClient();
+// server/lib/prisma.js
+// ---------------------------converted .ts to .js
 
-// export default prisma;
-import "dotenv/config";
+// lib/prisma.js
+
 import { PrismaClient } from "@prisma/client";
 
-const prisma = new PrismaClient();
+const prisma = new PrismaClient(); // no adapter, no extra options
 export default prisma;
