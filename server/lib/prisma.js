@@ -10,8 +10,13 @@
 // export default  prisma ;
 // ------------------------------------------------------ts-----------------------------
 // now it is in js---------------changing the name of file from prisma.ts  to prisma.js
+// import { PrismaClient } from "@prisma/client";
+
+// const prisma = new PrismaClient();
+
+// export default prisma;
+import "dotenv/config";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
-
 export default prisma;
